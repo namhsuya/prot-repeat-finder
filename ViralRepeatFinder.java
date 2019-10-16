@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 * @author  Ayushman Kumar Banerjee
 */
 
-public class ViralProteinMotifFinder {
+public class ViralRepeatFinder {
     
     public static void main(String[] args) {
         // Getting path for input file, containing sequences of proteins in FASTA format
