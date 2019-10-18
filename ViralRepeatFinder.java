@@ -1,3 +1,4 @@
+package viralproteinmotiffinder;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,7 +6,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -20,11 +25,11 @@ import java.util.regex.Pattern;
 * @author  Ayushman Kumar Banerjee
 */
 
-public class ViralRepeatFinder {
+public class ViralProteinMotifFinder {
     
     public static void main(String[] args) {
         // Getting path for input file, containing sequences of proteins in FASTA format
-        getViralRepeats(readData());
+        //getViralRepeats(readData());
     }
     
     private static ArrayList<String> readData(){
@@ -48,15 +53,43 @@ public class ViralRepeatFinder {
         return sequences;
     }
     
-    private static void getViralRepeats(ArrayList<String> sequences){
+    private static void getRepeats(ArrayList<String> sequences){
         Pattern p = Pattern.compile("(\\p{Alpha})\\1{1,}");
         sequences.stream().map((sequence) -> {
             System.out.println("For "+sequence.substring(0, sequence.indexOf(" ")));
             return sequence.substring(sequence.lastIndexOf(" "));
         }).map((sequence) -> p.matcher(sequence)).forEachOrdered((m) -> {
             while (m.find()){
-                System.out.println("Found repeats for " + m.group(0) + " from " + m.start() + " to " + m.end());
+                System.out.println("Found repeats for " + m.group(0) + " from " + m.start() + " to " + (m.end()-1));
             }
         });
-    }    
+    }
+    
+    private static void getViralRepeats(ArrayList<String> sequences)throws IOException{
+        
+        // Loading motif patterns
+        ViralPattern vp = new ViralPattern();
+        vp.loadMotifPatterns();
+        ArrayList<String> motif_patterns = new ArrayList<>();
+        LinkedHashMap<String, String> motifMap = vp.createHashMap();
+        
+        motifMap.entrySet().forEach((entry) -> {
+            motif_patterns.add(String.valueOf(entry.getKey()));
+        });
+        
+        for(String pattern : motif_patterns){
+            Pattern px = Pattern.compile(pattern);
+            
+            sequences.stream().map((sequence) -> {
+            System.out.println("For "+sequence.substring(0, sequence.indexOf(" ")));
+            return sequence.substring(sequence.lastIndexOf(" "));
+            }).map((sequence) -> px.matcher(sequence)).forEachOrdered((m) -> {
+            while (m.find()){
+                System.out.println("Found repeats for " + m.group(0) + " from " + m.start() + " to " + (m.end()-1));
+            }
+        });
+        }
+    }
+    
+    
 }
