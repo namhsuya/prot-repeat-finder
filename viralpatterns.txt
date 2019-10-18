@@ -1,0 +1,89 @@
+function	motif_regex
+TEST_FUNCTION	"X[^AOZ]{2,4}PP"
+"6-cysteine motif, degradation of chitin and chitotriose"	"C[^BJOUZ]{13,20}C[^BJOUZ]{5,6}C[^BJOUZ]{9,19}C[^BJOUZ]{10,14}C[^BJOUZ]{4,14}C"
+Adenovirus fiber flexibility motif	KLG[^BJOUZ]GL[^BJOUZ]F[DN]
+Adenovirus fiber flexibility motif	K[^BJOUZ]GGL[^BJOUZ]F[DN]
+"Agnoprotein function, productive viral infection"	L[FL][VI]F[VIL]LE[LF]LL[^BJOUZ]F & Q[^BJOUZ][^BJOUZ][IML][^BJOUZ][^BJOUZ][FY]
+Agnoprotein—NLS	RRRR[^BJOUZ]{5}R[^BJOUZ]{4}RK
+"Binding of virus proteins to retinoblastoma protein, gene expression and virus replication"	L[^BJOUZ]C[^BJOUZ]E
+"Binding of virus proteins to retinoblastoma protein, gene expression and virus replication"	[LI][^BJOUZ]C[^BJOUZ][DE]
+"Binding to ESCRT, paramyxoviruses budding"	[FILV][^BJOUZ]V
+Binding to integrins and viral attachment to cellular receptors	RGD
+Binding to integrins and viral attachment to cellular receptors	DL[^BJOUZ][^BJOUZ]L
+Binding to integrins and viral attachment to cellular receptors	LDV
+Binding to integrins and viral attachment to cellular receptors	RGDL[^BJOUZ][^BJOUZ]L
+Binding to integrins and viral attachment to cellular receptors	SDI
+Binding to integrins and viral attachment to cellular receptors	KGD
+Binding to integrins and viral attachment to cellular receptors	KGE
+Budded virions production and nucleocapsid assembly	"C[^BJOUZ]{5}C[^BJOUZ]{1,}H[^BJOUZ]{6}C"
+"Clathrin-binding motifs, clathrin-box"	L[LI][DEN][LF][DE]
+"Clathrin-binding motifs, clathrin-box"	L[FILV][^BJOUZ][FILV][DE]
+"Clathrin-binding motifs, clathrin-box"	PW[^BJOUZ][^BJOUZ]W
+Cleavage motif of Newcastle disease virus	[GE][KR]Q[GE]RL
+Cleavage motif of Newcastle disease virus	[RK]RQ[RK]RF
+Cleavage site for Influenza A virus hemagglutinin	KKKRGLF
+Cleavage site for Influenza A virus hemagglutinin	[QE][ST]RGLF
+Cleavage site for Influenza A virus hemagglutinin	R[^BJOUZ][RK]RGLF
+Cleavage site for Influenza A virus hemagglutinin	R[^BJOUZ]RRGLF
+Cleavage site for Influenza A virus hemagglutinin	R[^BJOUZ]{2}RGLF
+"Enhance virion-release, anti-tetherin activity"	DSG[^BJOUZ]{2}S
+Helix-Helix Interactions	A[^BJOUZ]{3}A[^BJOUZ]{3}A[^BJOUZ]{3}W
+Helix-Helix Interactions	V{3}I{2}L{3}L
+"Heparan sulfate-binding motif, post-internalization steps of adenovirus"	KKTK
+"Heparan sulfate-binding motif, post-internalization steps of adenovirus"	[HKR]{2}[^BJOUZ][HKR]
+"Heparan sulfate-binding motif, post-internalization steps of adenovirus"	[HKR]{3}[^BJOUZ]{2}[HKR]
+HIV neutralization by human antibodies	GPG[RQ]
+"HIV release, interfering with tetherin function"	[GD]DIWK
+"Induction of cellular-malignant transformation by Kaposin, activation of cap-dependent translation, and HIV retrotransposition"	L[^BJOUZ]{2}LL
+"IAP, block the apoptosis"	"G[^BJOUZ]{2}Y[^BJOUZ]{4}D[^BJOUZ]{3}C[^BJOUZ]{2}C[^BJOUZ]{6}W[^BJOUZ]{9}H[^BJOUZ]{6,10}C"
+"IAP, block the apoptosis"	"C[^BJOUZ]{2}C[^BJOUZ]{9,39}C[^BJOUZ]{1,3}H[^BJOUZ]{2,3}C[^BJOUZ]{2}C[^BJOUZ]{4,48}C[^BJOUZ]{2}C"
+"IAP, block the apoptosis"	A[KITV][AEP][FEISY]
+Interact with clathrin adaptor protein	P[^BJOUZ]{2}P
+Interact with clathrin adaptor protein	Y[^BJOUZ]Y[^BJOUZ]{2}[FILV]
+"ISGylation, antiviral response"	LRGG
+"ISGylation, antiviral response"	LRLRGG
+ITAM motif	"Y[^BJOUZ]{2}[LI][^BJOUZ]{6,8}Y[^BJOUZ]{2}[LI]"
+ITIM motif	[SIVL][^BJOUZ]Y[^BJOUZ]{2}[IVL]
+"Necessary for endocytosis, intracellular trafficking, interact with clathrin APs, and promotes viral spread, fusion and replication"	Y[^BJOUZ]{2}[FILV]
+"Nuclear export signal (NES), regulates protein export to nucleus from cytoplasm"	"[LIVFM][^BJOUZ]{2,3}[LIVFM][^BJOUZ][LIVFM]"
+"Nuclear export signal (NES), regulates protein export to nucleus from cytoplasm"	 L[^BJOUZ]{3}L[^BJOUZ]{2}L[^BJOUZ]L
+NLS motifs	KR[KR]R
+NLS motifs	K[KR]RK
+NLS motifs	[PR][^BJOUZ]{2}KR{DE}[KR]
+NLS motifs	KR[^BJOUZ][WFY][^BJOUZ]{2}AF
+NLS motifs	[RP][^BJOUZ]{2}KR[KR]{DE}
+NLS motifs	LGKR[KR][WFY]
+NLS motifs	"KR[^BJOUZ]{10,12}K[KR][KR]"
+NLS motifs	"KR[^BJOUZ]{10,12}K[KR][^BJOUZ][KR]"
+"Pentraxin domain, pathogen recognition, host defense, and antiviral response"	H[^BJOUZ]C[^BJOUZ][ST]W[^BJOUZ]S
+"Protein folding, Rossmann folds motifs, and bind FAD or NAD(P)"	"G[^BJOUZ]{3}G, G[^BJOUZ]{3}[GA]"
+"Protein folding, Rossmann folds motifs, and bind FAD or NAD(P)"	"G[^BJOUZ]{1,2}G[^BJOUZ]{2}G"
+Protein interaction and thiol-disulfide transfer	C[^BJOUZ]{2}C
+Protein interaction and thiol-disulfide transfer	C[^BJOUZ]{3}C
+"Proton transport, channel function, and transmembrane domain"	H[^BJOUZ]{3}W
+"Recruits ESCRT pathway, and mediates viral budding and release"	Y[^BJOUZ]{2}L
+"Recruits ESCRT pathway, and mediates viral budding and release"	P[TS]AP
+"Recruits ESCRT pathway, and mediates viral budding and release"	LYP[^BJOUZ]L
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	PPLP
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	SLQ[^BJOUZ]LA
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	V[^BJOUZ]H[^BJOUZ]MY
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	HCCH
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	YY[^BJOUZ]W
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	DPD
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	Y[^BJOUZ]{2}L
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	YRHHY
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	EDRW
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	DRMR
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	TGER[^BJOUZ]W
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	LG[^BJOUZ]G[^BJOUZ]{2}I[^BJOUZ]W
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	W[^BJOUZ]SLVK
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	W[HKN]SLVK
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	"V[^BJOUZ]IPL[^BJOUZ]{4,5}L"
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	"V[^BJOUZ]IPL[^BJOUZ]{4,5}L[^BJOUZ][FILV][^BJOUZ]{2}YW[^BJOUZ]L"
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	SL[VI][^BJOUZ]{4}Y[^BJOUZ]{9}Y
+"Regulation by interaction of retrovirus Vif with APOBEC, cullin5, elongin, and E3 ligase"	T[DEQ][^BJOUZ]{5}AD[^BJOUZ]{2}[IL]
+"Sorting signal, anti-tetherin"	E[^BJOUZ]{3}LV
+SUMOylation-SUMO binding to substrate	[FILV]{2}[^BJOUZ]S[^BJOUZ]S[DE][DE][DE]
+SUMOylation-SUMO binding to substrate	 [FILV]K[^BJOUZ][DE]
+SUMOylation-SUMO binding to substrate	[VI][^BJOUZ][VI][VI]
+"Ubiquitylation, interaction with Nedd4 E3 ubiquitin ligases, recruit ESCRT pathway, and mediates virus entry, cellular microtubule-dependent trafficking, budding, and release"	PP[^BJOUZ]Y
